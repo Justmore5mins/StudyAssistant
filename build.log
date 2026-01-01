@@ -15,3 +15,4 @@
 [chat] 6eaf366f-d59b-42ef-81bf-599d3da8088a
 [log 2] 今天主要是測試WolframAlpha API的整合，跟補完 reply/math.reply.md 跟測試在數學方面的功能，還有寫reply/chinese.reply.md 跟 reply/physic.reply.md。
 [TODO] 要驗證收錄資料的可行性，還有繼續補完其他科目的reply檔案。
+[log 3]在驗證資料處理功能的時候覺得自己寫的有關使用者輸入處理部分的prmpt跟大便一樣，所以就砍掉重練了，目前寫完處理使用者問問題的部分，在提供資料源的部分還在寫處理資料的python檔(utils/AddReference.py)，把所有不是md檔的資料就直接餵給markitdown,然後再做後處理(應該會用gemini驗證資料的可用性跟初步整理(例如意義不明的空白之類的，不過這部分應該找現成的script或是圖書館會好一點，因為通常資料源的長度都爆幹長，都餵給AI蠻消耗token的，不過應該可以用flash或是flash-lite解決))
