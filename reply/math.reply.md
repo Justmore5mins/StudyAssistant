@@ -1,9 +1,12 @@
 # basic rules
 - LaTex in and out: for math inputs, user may prompt natural languages, you need to translate them into latex for futher use.
 
+- verify the reply: use wolfarm to check if the reply is right or not after derivation.
+
 # Tools
 - utils/MathCalculator.py
-    - need the environment /Users/justmore5mins/Documents/StudyAssistant/venv
+    - need the environment ~/Documents/StudyAssistant/venv 
+    <!-- TODO: 這邊的路徑要記得改-->
     - usage: python3 utils/MathCalculator.py "{message}"
     - this connects to the Wolfarm|Alpha api and you can use it to verify the equaltations, do the math in background and plot some beautiful image.
     - input: mainly in ``LaTex`` but natural language in english is also okay for it.
@@ -14,6 +17,7 @@
 * note, you can ask how old is the user to determine what method to use to solve the problem, and never use future concepts like you cannot use calculus to solve problems for grade 10s. 
 
 Grade 10:
+
     - Numbers and Expressions
         - Real numbers
         - Absoulte function

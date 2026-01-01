@@ -1,0 +1,152 @@
+# basic rules
+for physics problem, grade 10s' you only need explain the key concepts, but for 11 and 12s' you need to tell them how to calculate the problem and for some complex one, ask them if it's symbols, how to solve it back.
+
+# physics cirriculum 
+Grade 10
+    - Scientific Attitude and Methods
+        about designing the experiments and others.
+        - SI units
+        - physics introduction
+            -the history of phyiscs
+    - Kinematics
+        - the motion of an object
+        - Newton's law of motion I
+        - common forces
+        - Celestial Motion
+    - Matter composition and interactions
+        - the compisition of matter
+        - the structure of an atom
+        - basic interaction forces
+    - electromagentic force
+        - the interaction between electricity and magaentic force
+        - electromagentic induction
+        - the union of electricity and magentic
+        - the characteristics of light
+        - doppler effect
+    - energy
+        - the form of energy
+        - energy at microscale
+        - the conservation of energy
+        - the conservation of energy and mass
+    - modern physics
+        - the start of modern physics
+        - the particle nature of light
+        - matter waves
+        - wave-particle duality
+        - the light pattern of atom
+
+Grade 11
+    - measure and uncertaincy
+        - introduction of uncertaincy
+        - the combination of uncertaincy
+            the combine of type A and B and cumulative uncertaincy
+        - physical dimension
+    - linear motion
+        - introduction of lineaer motion
+        - the graph of the motion
+        - equal-acceleration motion
+        - free fall
+        - verticl upward throw
+        - relative motion
+    - planar motion
+        - planar vectors(it's same as math but at this time math hasn't teach yet)
+        - the description of planar motion
+        - horizontal projectile
+        - oblique projectile
+    - newton motion laws
+        - the combination and decomposition of force
+        - elasticity
+        - friction
+        - normal force
+        - interia and the first law of motion
+    - periodical motion
+        - constant speed circular motion
+        - centripatial force and the radius of curvature
+        - conical pendulum
+        - SHM and its calculation
+    - gravitational force
+        - the law of gravitational force
+        - the gravitational force on the ground
+        - planet and artifical satellites
+    - linear and angular momentum
+        - impluse and linear momenutm
+        - the conservation of linear momentum
+        - Motion of the center of mass and total momentum of the system
+        - angular motion and torque
+    - work and energy
+        - work and kinematics energy
+        - work effiency
+        - conservation of mechnical energy
+            - the gravitational energy near the ground
+            - elastic potential energy
+            - the universal form of gravitational force
+    - the application of newton laws
+        - common forces
+        - the applications of static equilibrium
+        - collisions
+        - collisions: momentum and kinenatic conservation
+    - thermodynamics
+        - ideal gas law
+        - gas dynamics
+
+Grade 11~12
+    - waves
+        - the characteristics of waves
+        - periodic waves
+        - the reflection and transmission of waves
+        - The principle of wave superposition and standing waves
+        - the accumulation of waves
+        - standing wave
+    - sound waves
+        - the spread of sound
+        - fundamental tone and overtones
+        - the sound of resonance
+    - geometric optics
+        - the reflection and refraction of light
+        - plane mirror imaging
+        - snell's law
+        - visual depth and actual depth
+        - the dispersion of light
+        - total inernal reflection
+    - physical optics
+        - the wave theory of light
+        - interference of light
+        - diffraction of light
+- Grade 12
+    - electrostatics
+        - Electric charge and Coulomb's law
+        - electric field and electric line
+        - the electric field of point change 
+        - electric field of a conducting sphere
+        - Equilibrium of the force field of the charged plate
+        - potential energy and potential
+    - electromagnetic effects
+        - currrent and magnetic field
+        - the magnetic field of a current-carrying conductor
+        - the magnetic field of a long straight current-carrying conductor
+        - the magnetic field of a circular current-carrying conductor
+        - the magnetic field of a solenoid current-carrying conductor
+        - magnetic force on a current-carrying conductor
+    - electromagnetic induction
+        - friday's law
+        - the effect of electromagnetic induction
+        - magnetic flux
+        - leng's law
+        - cutting line of magnetic force
+    - electrical enginerring
+        - resistance and ohm's law
+        - current and electricmotive force
+        - circuit analysis
+        - the series and parallel of circuit
+        - battery electromotive force and terminal volage
+    - quantum phenomena
+        - the discover of electron
+        - Millikan oil drop experiment: electron charge measurement
+        - x ray
+        - blackbody radiation
+        - photoelectric effect
+    - structure of atom
+        - Rutherford model
+        - Bohr model
+        - Atomic nucleus
+    - 
