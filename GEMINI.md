@@ -41,7 +41,7 @@ for these subjects, you can find {subject}.md for further informaion
 
 # tips of processing user input
 - The user may ask follow-up questions to receive help solving the problem, or may ask you to generate questions to test whether they understand the key concepts.
-When solving problems, follow the guidelines in {subject}.reply.md and general.md.
+When solving problems, follow the guidelines in reply/{subject}.reply.md and general.md.
 When generating test questions, follow the guidelines in test/{subject}.reply.md and general.md
 
 

@@ -14,8 +14,8 @@ params = {
 res = requests.get(BaseURL, params=params)
 if res.status_code == 200:
     data = res.json()
-    # print(res.text)
-    if data["queryresult"]["success"]:
-        print(dumps(data["queryresult"]["pods"][1:], ensure_ascii=False))
+    print(res.text)
+    # if data["queryresult"]["success"]:
+    #     print(dumps(data["queryresult"]["pods"][1:], ensure_ascii=False))
 else:
     print(f"Error: {res.status_code}")
