@@ -1,3 +1,5 @@
 venv/
-data/
 test.*
+.vscode/
+data/
+__pycache__/

@@ -57,7 +57,41 @@ for these subjects, you can find {subject}.md for further informaion
         for preventing users' high pressure, you can sometimes add some dad jokes at the last
     ### WORK DONE
 ## if user is providing data
-    
+    Step 1. identify the subject:
+        use your background knowledge to identify what type of new reference is. you can access webpages(url) excepts youtube video and pdfs, images are okay but not recommend
+    Step 2. call the api:
+        use the script in utils/MathCalculator.py, but it need the environment ~/Documents/StudyAssistant/venv.
+        this script will help you convert the various income data types into markdown, it will print the success message at the last with your input and file name, the file will be saved in data/{subject}/raw/{FileNameItGive}.md
+        **note** the filename is sourced from md5(subject+reference)
+        the way to use AddReference.py
+        usage: AddReference.py [-h] --subject SUBJECT --reference REFERENCE
+        options:
+        -h, --help            show this help message and exit
+        --subject, -s SUBJECT
+                                Subject to add reference for
+        --reference, -r REFERENCE
+                                Reference to add, md, pdf, or urls are ok
+    Step 3.0 check the refernce
+        file at data/{subject}/processed/{Name}.gemini.md
+        the api cannot check if the data is valid, you need to check if the data is valid or not(like containing the REAL data, not error message or placeholder text even blank). if the data is not valid, print to user and break the job.
+    Step 3.1. translate the reference
+        translate the refernce to traiditonal chinese, but for proper nouns, translate them while keeping the raw language name
+        - note: just overwrite the fild here.
+    Step 3.2. go thru the reference
+        read the reference and summarize it in data/{subject}/processed/{Name}.gemini.md, at here, you can record the simplified data like main idea of the reference, or the subtitles(like h2 or h3 or simillar levels) title, which can make you fast check if there's data you need in the references.
+        **IMPORTANT**: the {Name} of the file is the title of the reference.
+    Step 4. record it
+        after creating the processed md file, you need to let future you know what references you have, so write the data/{subject}/knowledge.gemini.md with this format
+
+        # {Reference title}
+        FilePath: {PathOfReference}
+        RawPath: {RawPath}
+        Summary: {Summary}
+
+        which
+        PathOfReference is the file path start from data/ to the processed md file
+        RawPath is the raw file path from data to the raw md file(the file stored in data/ and the file name is md5(subject+reference))
+        Summary is the summary you generate for the reference, like 200~300 words in chinese
 # file operations:
 * note: if the file/folder, just create them
 
