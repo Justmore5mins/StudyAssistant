@@ -41,15 +41,15 @@ for those students in 9th and 12th grade, they need to participate the CAP and G
 # Tools you can access
 ## WolfarmAlpha API
 - command: ``python3 utils/WolfarmAlpha.py {message}``
-- environment: ``venv/``
+- required environment: ``venv/``
 - input:
-    - {message} is the content you can ask wolfarm, you need to write the request in english, for math expressions, you can use latex
+    - {message} is the content you can ask wolfarm, **you need to write the request in english**, for math expressions, you can use latex or wolfarmlanguage
 - output:
     - reply in json with full replying data
 
 ## python script
 - command: ``python3 -c {SomePythonScript}``
-- environment: ``venv/``
+- required environment: ``venv/``
 - input:
     - the python script you written
 - output:
@@ -57,8 +57,9 @@ for those students in 9th and 12th grade, they need to participate the CAP and G
 
 ## MarkItDown
 - command: ``python3 utils/MarkItDown.py {sources...}``
-- environment: `venv/`
+- required environment: `venv/`
 - input:
     - {sources...} is the source you wan to save in markdown format, and accepts multiple sources.
 - output:
     it will return "Converted and saved to {filename}.md" (which filename is the md5 hash of the reference) in relative path if it is success, and you can checkout the contents inside. although it will preproess the source, it can be not containing any usable data, be caution.
+- note: for wikipeida sources, you need to wget to local html file and then feed to MarkitDown

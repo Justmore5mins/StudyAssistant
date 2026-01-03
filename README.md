@@ -12,5 +12,6 @@
 ## 協作
 可以透過 austinyu0607@gmail.com 找到我跟我聯繫，謝謝
 
-## 要改路徑的地方
-- reply/math.reply.md
+## 注意事項
+
+google-genai的pypi不知道為什麼讓pip 抓就是會爆掉，所以請各位到[這邊](https://pypi.org/project/google-genai/#files)去找google-genai的package

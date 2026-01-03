@@ -8,10 +8,7 @@ from google import genai
 for ref in argv[1:]:
     data: str | None = None
 
-    if isfile(ref):
-        with open(ref, "r", encoding="utf-8") as f:
-            data = f.read()
-    elif "http" in ref or "www." in ref:
+    if isfile(ref) or "http" in ref or "www." in ref:
         data = ref
     else:
         print("Invalid reference:", ref)
@@ -22,7 +19,7 @@ for ref in argv[1:]:
         try:
             open(f"{md5(ref.encode()).hexdigest()}.md", "x").close()
             with open(f"{md5(ref.encode()).hexdigest()}.md", "w+", encoding="utf-8") as file:
-                res = model.models.generate_content(model="gemini-2.5-flash", contents="tidy up(like removing the strange space and new lines) the following content into markdown format, and no extra text:\n\n" + md.convert(data).text_content)
+                res = model.models.generate_content(model="gemini-3-flash-preview", contents="tidy up(like removing the strange space and new lines) the following content into markdown format, and no extra text:\n\n" + md.convert(data).text_content)
                 if res.text is not None:
                     file.write(res.text)
                 else:
