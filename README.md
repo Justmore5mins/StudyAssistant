@@ -15,6 +15,13 @@
 
 需要的東西: Python 3.13, Gemini CLI
 
+要記得先用Git下載這個repo到電腦裡面喔(或是直接下載zip也可以)
+
+```shell
+    git clone https://github.com/Justmore5mins/StudyAssistant.git
+    cd StudyAssistant
+```
+
 ### MacOS
 
 - 從[這邊](https://brew.sh/)下載HomeBrew
