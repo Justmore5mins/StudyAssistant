@@ -1,17 +1,52 @@
-# Gemini 學習助手
-這個專案是利用Gemini CLI所製作的Prompt Engineering的專案
+# Gemini CLI 學習助手
 
-## 環境初始化
-用 ``Python 3.10`` 建立一個虛擬環境，需要的pip packages在``requirements.txt`` 裡面，因為原推是用Mac開發的關係，所以有一些Prompt裡面的路徑可能會跑掉，要注意一下(有用TODO標起來所以如果用vscode的建議裝better comments來highlight這些東西)
+## 注意
+因為AI生成的不重複性，每次生成的內容基本上都不一樣，如果沒有照預期的生成的話，重開試試看，如果還是沒有解決的話可以到[這邊](https://github.com/Justmore5mins/StudyAssistant/issues/new)告訴我，謝謝。
 
-還有[Gemini CLI](https://github.com/google-gemini/gemini-cli)記得裝啊啊啊
+## 簡介
 
-## 使用說明
-在git clone下來的路徑打開gemini(StudyAssistant)然後問他在幹嘛就好了(這個說明有寫跟沒寫一樣)
+這是一個利用Gemini CLI為底爆改成的學習輔助AI，利用預先寫好的Prompt可以讓使用者只要丟題目的照片/文字就可以了
 
-## 協作
-可以透過 austinyu0607@gmail.com 找到我跟我聯繫，謝謝
+## 特色
 
-## 注意事項
+有別於一般的AI,他會利用引導的方式來引導使用這想出問題的解答，而不是直接讓使用者抄答案；而且在最後會補充延伸知識與講冷笑話
 
-google-genai的pypi不知道為什麼讓pip 抓就是會爆掉，所以請各位到[這邊](https://pypi.org/project/google-genai/#files)去找google-genai的package
+## 安裝
+
+需要的東西: Python 3.13, Gemini CLI
+
+### MacOS
+
+- 從[這邊](https://brew.sh/)下載HomeBrew
+
+```shell
+    brew install python@3.13
+    brew install gemini-cli
+    python3.13 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+```
+
+### Windows
+- 從 [這邊](https://apps.microsoft.com/detail/9pnrbtzxmb4z?ocid=webpdpshare)下載Python
+- 從 [這邊](https://nodejs.org/en/download)下載node.js
+```powershell
+    npm install -g @google/gemini-cli
+    python -m venv venv
+    .\venv\Scripts\Activate.ps1
+    pip install -r requirements.txt
+```
+
+## 使用
+
+**記得** 在第一次使用可以用Google登入
+
+**注意** NanoBanana在gemini cli使用的時候需要到[AI Studio](https://aistudio.google.com/api-keys)申請API並且用Billing Account才可以使用
+
+訪問方式：在CLI裡面問他就好了(有講沒講一樣啊喂)
+
+## 主要功能
+- 回答問題
+- 觀念解釋
+- 出單題
+- 出考卷(開發中)
