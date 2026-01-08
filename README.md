@@ -18,17 +18,7 @@
 ### MacOS
 
 - 從[這邊](https://brew.sh/)下載HomeBrew
-
-```shell
-    brew install python@3.13
-    brew install gemini-cli
-    git clone https://github.com/Justmore5mins/StudyAssistant.git
-    cd StudyAssistant
-    python3.13 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    pip install google-genai
-```
+然後
 
 ### Windows
 - 從 [這邊](https://apps.microsoft.com/detail/9pnrbtzxmb4z?ocid=webpdpshare)下載Python
