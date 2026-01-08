@@ -13,24 +13,16 @@
 
 ## 安裝
 
-需要的東西: Python 3.13, Gemini CLI
+需要的東西: Python 3.13, Gemini CLI, Git
 
 ### MacOS
 
 - 從[這邊](https://brew.sh/)下載HomeBrew
-然後
+跑 `make setup`就好了
 
 ### Windows
 - 從 [這邊](https://apps.microsoft.com/detail/9pnrbtzxmb4z?ocid=webpdpshare)下載Python
-- 從 [這邊](https://nodejs.org/en/download)下載node.js
-```powershell
-    git clone https://github.com/Justmore5mins/StudyAssistant.git
-    cd StudyAssistant
-    python3.13 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    pip install google-genai
-```
+跑 `.\make.ps1`
 
 ## 使用
 

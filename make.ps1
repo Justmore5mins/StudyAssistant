@@ -1,19 +1,41 @@
-if (-not (Test-Path venv)) {
-    python -m venv venv
+# =========================
+# Variables
+# =========================
+$VENV = "venv"
+$Python = "$VENV\Scripts\python.exe"
+$Pip = "$VENV\Scripts\pip.exe"
+
+# =========================
+# venv
+# =========================
+if (-not (Test-Path $VENV)) {
+    Write-Host "Creating virtual environment..."
+    python3.13 -m venv $VENV
 }
 
-$python = "venv\Scripts\python.exe"
-
-if (-not (Test-Path markitdown)) {
+# =========================
+# markitdown
+# =========================
+if (-not (Test-Path "markitdown")) {
+    Write-Host "Cloning markitdown repository..."
     git clone https://github.com/microsoft/markitdown.git
 }
 
-& $python -m pip install -e "markitdown/packages/markitdown[all]"
+Write-Host "Installing markitdown (editable, all extras)..."
+& $Pip install -e "markitdown/packages/markitdown[all]"
 
-if (-not (Get-Command gemini -ErrorAction SilentlyContinue)) {
-    if (Get-Command winget -ErrorAction SilentlyContinue) {
-        winget install Google.Gemini
-    } else {
-        Write-Error "winget not found. Install Gemini manually."
-    }
+# =========================
+# gemini
+# =========================
+if (-not (Get-Command brew -ErrorAction SilentlyContinue)) {
+    Write-Error "Homebrew not installed"
+    exit 1
 }
+
+Write-Host "Installing gemini..."
+brew install gemini
+
+# =========================
+# final
+# =========================
+Write-Host "Everything is ok"
