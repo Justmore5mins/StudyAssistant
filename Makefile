@@ -7,7 +7,7 @@ PIP := $(VENV)/bin/pip
 setup: venv markitdown gemini
 
 venv:
-	python3 -m venv $(VENV)
+	python3.13 -m venv $(VENV)
 
 markitdown:
 	@if [ ! -d markitdown ]; then \
