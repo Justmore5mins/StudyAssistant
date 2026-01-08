@@ -15,13 +15,6 @@
 
 需要的東西: Python 3.13, Gemini CLI
 
-要記得先用Git下載這個repo到電腦裡面喔(或是直接下載zip也可以)
-
-```shell
-    git clone https://github.com/Justmore5mins/StudyAssistant.git
-    cd StudyAssistant
-```
-
 ### MacOS
 
 - 從[這邊](https://brew.sh/)下載HomeBrew
@@ -29,19 +22,24 @@
 ```shell
     brew install python@3.13
     brew install gemini-cli
+    git clone https://github.com/Justmore5mins/StudyAssistant.git
+    cd StudyAssistant
     python3.13 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
+    pip install google-genai
 ```
 
 ### Windows
 - 從 [這邊](https://apps.microsoft.com/detail/9pnrbtzxmb4z?ocid=webpdpshare)下載Python
 - 從 [這邊](https://nodejs.org/en/download)下載node.js
 ```powershell
-    npm install -g @google/gemini-cli
-    python -m venv venv
-    .\venv\Scripts\Activate.ps1
+    git clone https://github.com/Justmore5mins/StudyAssistant.git
+    cd StudyAssistant
+    python3.13 -m venv venv
+    source venv/bin/activate
     pip install -r requirements.txt
+    pip install google-genai
 ```
 
 ## 使用
