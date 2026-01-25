@@ -6,3 +6,6 @@ __pycache__/
 .env
 gsat/
 markitdown/
+WorthEstimate
+paper.pdf
+result.md
